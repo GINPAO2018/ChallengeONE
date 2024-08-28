@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hotel Boutique ONE</title>
+    <link rel="stylesheet" type "text/css" href="css/styles.css" />
+</head>
+
+<body>
+    <section id="global">
+        <header>
+            <div id="logo">
+                <h1>Hotel Boutique ONE</h1>
+            </div>
+            <div class="clearfix"></div>
+
+
+            <navbar>
+                <ul id="menu">
+                    <li><a href="#"> Habitación Sencilla</a></li>
+                    <li><a href="#">Habitacion Premium </a></li>
+                </ul>
+            </navbar>
+
+        </header>
+        <h2>¡Fechas de tu reserva!</h2>
+
+        <section id="calendar">
+
+            <fieldset class="booking-date-fieldset">
+                <label for="arrival-readable">Fecha de Entrada</label>
+                <input type="input" class="date hasDatepicker" id="arrival-readable" name="arrival-readable"><img class="ui-datepicker-trigger" src="../img/cal.jpg" alt="..." title="...">
+                <input type="hidden" id="arrival" name="arrival" value="20211025">
+                <label for="arrival-booking-date-day" class="reader-only">días</label>
+                <input readonly="" id="arrival-booking-date-day" class="booking-date-day">
+            </fieldset>
+            <fieldset class="booking-date1-fieldset">
+                <label for="departure-readable">Fecha de Salida</label>
+                <input type="input" class="date hasDatepicker" id="departure-readable" name="departure-readable"><img class="ui-datepicker-trigger" src="../img/cal.jpg" alt="..." title="...">
+                <input type="hidden" id="departure" name="departure" value="20211026">
+                <label for="departure-booking-date-day" class="reader-only">días</label>
+                <input readonly="" id="departure-booking-date-day" class="booking-date-day">
+            </fieldset>
+
+        </section>
+        <section id="reservando">
+            <fieldset id="booking-submit-field">
+                <fieldset id="booking-rooms-field">
+                    <label for="booking-rooms">Tipo de Alojamiento</label>
+                    <select id="booking-rooms" name="numRooms">
+                    <option>Premium</option>
+                    <option>Sensilla</option>
+                </select>
+                </fieldset>
+                <fieldset id="booking-adults-field">
+                    <label for="booking-adults">Cantidad de Personas</label>
+                    <select id="booking-adults" name="numAdults">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                </fieldset>
+
+                <fieldset id="booking-rooms-field">
+                    <label for="booking-rooms">Tipo de Comida</label>
+                    <select id="booking-rooms" name="numRooms">
+            <option>Combo completo</option>
+            <option>Solo desayuno</option>
+            </select>
+                </fieldset>
+        </section>
+        <from>
+            <button>Calcular reserva</button>
+        </from>
+        <nav>
+            <ul id="menu">
+                <div id="descripcion">
+                    <ul>
+                        <li><a href="#">Habitacion Sencilla</a></li>
+                        <a href="img/Sencilla.jpg">
+                            <img alt="Habitacion Sencilla" src="img/Sencilla.jpg" />
+                        </a>
+                        <p>Habitación sencilla cuenta con una sola cama, o con dos camas, condicionado por el pago por persona.</p>
+                    </ul>
+                    <li><a href="#">Habitacion Premium</a></li>
+                    <a href="img/Premium.jpg">
+                        <img alt="Habitacion Premium" src="img/Premium.jpg" />
+                    </a>
+                    <p>Ésta habitación cuenta con una cama doble, con una excelente vista.</p>
+            </ul>
+        </nav>
+        </div>
+    </section>
+    <footer><cite>Hotel Boutique ONE,Gracias por preferirnos </cite></footer>
+
+</body>
+
+</html>
